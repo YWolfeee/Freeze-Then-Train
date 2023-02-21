@@ -1,0 +1,3 @@
+#!/bin/bash
+python -u train_classifier.py --output_dir results/FTT --model_type resnet50 --sup_fraction 0.25 --unsup_fraction 0.75 --pretrained_model --core_noise 10 --num_epochs 100 --weight_decay 0.001 --batch_size 128 --init_lr 1e-3 --data_dir ../deep_feature_reweighting/data/waterbirds_v1.0 --augment_data > logs/FTT_generation.log 2>&1
+python -u extraction.py --data_dir ../deep_feature_reweighting/data/waterbirds_v1.0 --base_dir results/FTT --method FTT --core_noise 10 --sup_fraction 0.25 --unsup_fraction 0.75 --gen_embeddings > logs/FTT_extraction.log 2>&1
