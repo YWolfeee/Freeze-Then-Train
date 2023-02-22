@@ -49,7 +49,8 @@ python extraction.py --data_dir data/waterbirds_v1.0 --gen_embeddings \
 ```
 Here `gen_embeddings` means generating feature embeddings using the saved model.
 
-
+#### Running on Distribution Shift Dataset
+We support FTT on the [Facebook DomainBed benchmark](https://github.com/facebookresearch/DomainBed). To train FTT on distribution shift datasets, please use the code we submitted to the AISTAT 2023 conference.
 
 #### Reference
 
