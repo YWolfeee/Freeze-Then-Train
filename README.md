@@ -53,5 +53,5 @@ Here `gen_embeddings` means generating feature embeddings using the saved model.
 
 #### Reference
 
-This repository is adapted from the [dfr repo](https://github.com/PolinaKirichenko/deep_feature_reweighting), and we implement the newly proposed FTT algorithm and simplify LLR.
+This repository is adapted from the [dfr repo](https://github.com/PolinaKirichenko/deep_feature_reweighting), and we implement the FTT algorithm and simplify LLR.
 
